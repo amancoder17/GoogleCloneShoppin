@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "397069447490",
+    "project_id": "cloneshoppin",
+    "storage_bucket": "cloneshoppin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397069447490:android:7ac11161cc60511fb0d8db",
+        "android_client_info": {
+          "package_name": "com.googlecloneshoppin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397069447490-m5brhud4h2fmrd9ia7hfh6ogab9socbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.googlecloneshoppin",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "397069447490-2fplgccauaag48aguhvm9ajgeav5lc5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfDDjTvzK-Ty56baXD-LQ4-Rb04--ONP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397069447490-2fplgccauaag48aguhvm9ajgeav5lc5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

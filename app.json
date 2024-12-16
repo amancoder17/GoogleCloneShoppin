@@ -1,4 +1,11 @@
 {
   "name": "GoogleCloneShoppin",
-  "displayName": "GoogleCloneShoppin"
+  "displayName": "GoogleCloneShoppin",
+  "expo": {
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": ["js", "jsx", "json", "wasm", "svg"]
+    }
+  
+}
 }
