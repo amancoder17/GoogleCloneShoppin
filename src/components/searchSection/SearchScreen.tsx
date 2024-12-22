@@ -10,14 +10,15 @@ import {
   Linking,
 } from "react-native";
 import { Avatar } from "react-native-paper";
-import { useNavigation } from "@react-navigation/native";
+import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { fetchBingResults } from "./SearchApi";
+import { RootStackParamList } from "../../RootStackParamList";
 
 const SearchScreen: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>()
   const [results, setResults] = useState<any[]>([]);
   const debounceTimer = useRef<NodeJS.Timeout | null>(null);
-  const navigation = useNavigation();
 
   const handleSearch = async (query: string) => {
     if (query.length < 3) {
@@ -39,6 +40,9 @@ const SearchScreen: React.FC = () => {
       handleSearch(text);
     }, 300);
   };
+  const handleCamera=()=>{
+    navigation.navigate('GoogleLens')
+  }
 
   return (
     <View style={styles.mainContainer}>
@@ -74,7 +78,7 @@ const SearchScreen: React.FC = () => {
                 style={styles.icon1}
               />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() =>handleCamera()}>
               <Avatar.Image
                 source={require("../../assets/images/lens.png")}
                 size={25}
